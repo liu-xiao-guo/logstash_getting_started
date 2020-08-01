@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /Users/liuxg/demos/logstash/weblog-sample.log
+ 
+output.logstash:
+  hosts: ["localhost:9900"]
